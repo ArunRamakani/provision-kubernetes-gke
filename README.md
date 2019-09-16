@@ -1,4 +1,3 @@
-![Image description](https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Kubernetes-Engine.png)
 
 # provision-kubernetes-gke
 
@@ -16,5 +15,7 @@ Apply the yaml available at https://getambassador.io/yaml/ambassador/ambassador-
 
 ```kubectl apply -f https://getambassador.io/yaml/ambassador/ambassador-rbac.yaml```
 
-This instruction will install Ambassador API Gateway. After installing Ambassador, you will need to create a Kubernetes service to expose a LoadBalancer that is integrated with the gateway.
+This instruction will install Ambassador API Gateway. After installing Ambassador, you will need to create a Kubernetes service to expose a LoadBalancer that is integrated with the gateway. Servce definition yaml is available as ambassador-service.yaml in this git repo.
+
+```kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/ambassador-service.yaml```
 
