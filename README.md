@@ -1,3 +1,5 @@
+[logo]: https://www.network.ae/en "Logo Title Text 2"
+
 # provision-kubernetes-gke
 
 1) Create a free google cloud account with $300 free creadites
