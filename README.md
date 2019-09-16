@@ -33,7 +33,7 @@ kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubern
 ```
 We will be able to see the tweet application comming with the given. http://34.67.155.227/
 
-# Setup a free domain name
+# Setup a free domain
 
 Lets add little fun by adding a free domain from Freenom. I hae added DNS A record for the domain * "network-international-assesment.tk" * pointing to the kubernetes external IP. 
 
