@@ -25,5 +25,15 @@ Now after few minutes time you be assigned an external IP by the kubernetes clus
 
 Deploy the test application service and deployment yaml to see if the IP access is working 
 
+```
+kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/test-deployment.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/test-service.yaml
+
+```
+We will be able to see tweet application comming with the given. http://34.67.155.227/
+
+
+
 
 
