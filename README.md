@@ -35,7 +35,11 @@ We will be able to see the tweet application comming with the given. http://34.6
 
 # Setup a free domain name
 
-Lets add little fun by adding a feee domain from Freenom. We can get a free domain for a short period of time. I hae added DNS A record for the domain network-international-assesment.tk pointing to the kubernetes external ip
+Lets add little fun by adding a free domain from Freenom. I hae added DNS A record for the domain * "network-international-assesment.tk" * pointing to the kubernetes external IP. 
+
+http://network-international-assesment.tk/
+
+
 
 
 
