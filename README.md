@@ -19,3 +19,8 @@ This instruction will install Ambassador API Gateway. After installing Ambassado
 
 ```kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/ambassador-service.yaml```
 
+Now after few minutes time you be assigned an external IP by the kubernetes cluster from external world through a API gateway 
+
+# Setup a test deployment
+
+Deploy the below sample tweet application to see if the IP access is working 
