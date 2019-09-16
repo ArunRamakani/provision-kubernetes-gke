@@ -9,7 +9,7 @@
 
 ```gcloud container clusters get-credentials network-international-assesment --zone us-central1-a --project kubeecho```
 
-# Setup Ambassador API GateWay 
+# Setup ambassador API gateway 
 
 Apply the yaml available at https://getambassador.io/yaml/ambassador/ambassador-rbac.yaml to install Ambassador
 
