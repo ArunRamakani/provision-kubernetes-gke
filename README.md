@@ -1,4 +1,4 @@
-[logo]: https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Kubernetes-Engine.png "Logo Title Text 2"
+![Image description](https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Google-Kubernetes-Engine.png)
 
 # provision-kubernetes-gke
 
