@@ -39,6 +39,8 @@ Lets add little fun by adding a free domain from Freenom. I hae added DNS A reco
 
 http://network-international-assesment.tk/
 
+DNS A record may take several minutes to reflect the configuration in DNS servers
+
 
 
 
