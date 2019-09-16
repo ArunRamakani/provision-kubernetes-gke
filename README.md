@@ -23,4 +23,7 @@ Now after few minutes time you be assigned an external IP by the kubernetes clus
 
 # Setup a test deployment
 
-Deploy the below sample tweet application to see if the IP access is working 
+Deploy the test application service and deployment yaml to see if the IP access is working 
+
+
+
