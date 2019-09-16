@@ -8,7 +8,7 @@ metadata:
       apiVersion: ambassador/v1
       kind: Mapping
       name: kubernetes-tutorial-mapping
-      prefix: /
+      prefix: /test-page
       service: kubernetes-tutorial-service
       host_rewrite: kubernetes-tutorial-service
 spec:
