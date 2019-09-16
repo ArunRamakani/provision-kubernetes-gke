@@ -6,4 +6,7 @@
 
 # Copy kubectl config and certificates from google cloud
 
-*gcloud container clusters get-credentials network-international-assesment --zone us-central1-a --project kubeecho*
+```
+gcloud container clusters get-credentials network-international-assesment --zone us-central1-a --project kubeecho
+
+```
