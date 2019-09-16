@@ -1,4 +1,4 @@
-[logo]: https://www.network.ae/en "Logo Title Text 2"
+[logo]: https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/logo-network.svg "Logo Title Text 2"
 
 # provision-kubernetes-gke
 
