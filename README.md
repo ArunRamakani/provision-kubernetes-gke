@@ -39,7 +39,28 @@ Lets add little fun by adding a free domain from Freenom. I hae added DNS A reco
 
 http://network-international-assesment.tk/
 
-DNS A record may take several minutes to reflect the configuration in DNS servers
+DNS A record may take several hours to reflect the configuration in DNS servers
+
+# Setting certificate manger for SSL setup
+
+We have first create namespace for certificate manager and need to disable resource validation on the namespace so the installation doesn't end up on a deadlock
+
+```
+kubectl create namespace cert-manager
+kubectl label namespace cert-manager certmanager.k8s.io/disable-validation=true
+```
+
+Then install a certificate manger 
+
+```
+kubectl apply -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.7/deploy/manifests/cert-manager.yaml
+```
+
+# Issue certificates with Ambassador and cert-manager
+
+This step will issue a TLS certificate for TLS for the mapped domain to secure the network traffic over HTTPS
+
+
 
 
 
