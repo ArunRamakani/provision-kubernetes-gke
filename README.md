@@ -41,38 +41,7 @@ http://network-international-assesment.tk/
 
 DNS A record may take several hours to reflect the configuration in DNS servers
 
-# Setting certificate manger for SSL setup
 
-We have first create namespace for certificate manager and need to disable resource validation on the namespace so the installation doesn't end up on a deadlock
-
-```
-kubectl create namespace cert-manager
-kubectl label namespace cert-manager certmanager.k8s.io/disable-validation=true
-```
-
-Then install a certificate manger 
-
-```
-kubectl apply -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.7/deploy/manifests/cert-manager.yaml
-```
-
-# Issue certificates with Ambassador and cert-manager
-
-This step will issue a TLS certificate for TLS for the mapped domain to secure the network traffic over HTTPS
-
-```
-kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/certificate-issuer.yaml
-```
-
-Next we have to identify the acme-http-domain and acme-http-token to create a certificate challenger service 
-
-```
-kubectl logs -n cert-manager cert-manager-d4455bb6f-jwh2h | grep acme-http-domain
-kubectl get pods -n cert-manager
-I0917 00:00:43.802118       1 ingress.go:49] Looking up Ingresses for selector certmanager.k8s.io/acme-http-domain=4080340413,certmanager.k8s.io/acme-http-token=1471942575
-```
-
-Now apply the challenger service 
 
 
 
