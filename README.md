@@ -54,7 +54,7 @@ kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prome
 final step is to set up Prometheus resorces
 
 ```
-kubectl create -f 
+kubectl create -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/prometheus-deployment.yaml
 ```
 
 
