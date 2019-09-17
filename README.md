@@ -51,13 +51,18 @@ kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prome
 kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prometheus/master/config-map.yaml
 ```
 
-final step is to set up Prometheus resorces
+final step is to set up Prometheus resorces and port forwarding will give access for prometheus in local host
 
 ```
 kubectl create -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/prometheus-deployment.yaml
+kubectl port-forward prometheus-monitoring-3331088907-hm5n1 8080:9090 -n monitoring
 ```
 
 
 
 
 ![alt landscape](https://i.ibb.co/Z1d9Ngf/Screen-Shot-2019-09-17-at-4-41-08-PM.png)
+
+
+
+
