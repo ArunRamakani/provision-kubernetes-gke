@@ -41,9 +41,21 @@ http://network-international-assesment.tk/test-page
 
 DNS A record may take several hours to reflect the configuration in DNS servers
 
+# Setup Prometheus Monitoring for k8s
 
+first step is to create a namespace for the monitoring resources deployment, roal binding and config maps 
 
+```
+kubectl create namespace monitoring
+kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prometheus/master/clusterRole.yaml
+kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prometheus/master/config-map.yaml
+```
 
+final step is to set up Prometheus resorces
+
+```
+kubectl create -f 
+```
 
 
 
