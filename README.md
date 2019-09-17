@@ -71,9 +71,3 @@ Istio - Connect, Secure, Control and Observe  microservices
 Prometheus - Monitoring 
 
 ![alt landscape](https://i.ibb.co/SdQcLBT/Screen-Shot-2019-09-17-at-5-38-57-PM.png)
-
-
-
-
-
-
