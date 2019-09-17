@@ -31,13 +31,13 @@ kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubern
 kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/test-service.yaml
 
 ```
-We will be able to see the tweet application comming with the given. http://34.67.155.227/
+We will be able to see the tweet application comming with the given. http://34.67.155.227/test-page
 
 # Setup a free domain
 
 Lets add little fun by adding a free domain from Freenom. I hae added DNS A record for the domain * "network-international-assesment.tk" * pointing to the kubernetes external IP. 
 
-http://network-international-assesment.tk/
+http://network-international-assesment.tk/test-page
 
 DNS A record may take several hours to reflect the configuration in DNS servers
 
