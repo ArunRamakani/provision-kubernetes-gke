@@ -58,6 +58,20 @@ kubectl create -f https://raw.githubusercontent.com/ArunRamakani/provision-kuber
 kubectl port-forward prometheus-monitoring-3331088907-hm5n1 8080:9090 -n monitoring
 ```
 
+# Setup Monitoring environment for k8s
+
+We will use Elasticsearch cluster along with Kibana and Fluentd on Kubernetes to capture logs and moniter them 
+
+gcloud compute disks create elastic-pv --zone=us-central1-a --size 20GB
+
+kubectl create namespace log
+
+kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/GCP-Volume.yaml -n log
+
+kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/elastic-pvc.yaml -n log
+
+
+
 # Overall Landscape 
 
 Tech Stack  | Usage
