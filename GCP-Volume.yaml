@@ -8,5 +8,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   gcePersistentDisk:
-    pdName: mysql-disk
+    pdName: elastic-pv
     fsType: ext4
