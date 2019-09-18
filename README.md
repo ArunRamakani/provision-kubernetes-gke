@@ -7,7 +7,7 @@
 
 # Copy kubectl config and certificates from google cloud
 
-```gcloud container clusters get-credentials network-international-assesment --zone us-central1-a --project kubeecho```
+```gcloud container clusters get-credentials network-international-ass --zone us-central1-a --project kubeecho```
 
 # Setup ambassador API gateway 
 
@@ -31,7 +31,7 @@ kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubern
 kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/test-service.yaml
 
 ```
-We will be able to see the tweet application comming with the given. http://34.67.155.227/test-page
+We will be able to see the tweet application comming with the given. http://34.69.90.135/test-page
 
 # Setup a free domain
 
@@ -41,36 +41,9 @@ http://network-international-assesment.tk/test-page
 
 DNS A record may take several hours to reflect the configuration in DNS servers
 
-# Setup Prometheus Monitoring for k8s
+# Monitoring and logging
 
-first step is to create a namespace for the monitoring resources deployment, roal binding and config maps 
-
-```
-kubectl create namespace monitoring
-kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prometheus/master/clusterRole.yaml
-kubectl create -f https://raw.githubusercontent.com/bibinwilson/kubernetes-prometheus/master/config-map.yaml
-```
-
-final step is to set up Prometheus resorces and port forwarding will give access for prometheus in local host
-
-```
-kubectl create -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/prometheus-deployment.yaml
-kubectl port-forward prometheus-monitoring-3331088907-hm5n1 8080:9090 -n monitoring
-```
-
-# Setup Monitoring environment for k8s
-
-We will use Elasticsearch cluster along with Kibana and Fluentd on Kubernetes to capture logs and moniter them 
-
-gcloud compute disks create elastic-pv --zone=us-central1-a --size 20GB
-
-kubectl create namespace log
-
-kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/GCP-Volume.yaml -n log
-
-kubectl apply -f https://raw.githubusercontent.com/ArunRamakani/provision-kubernetes-gke/master/elastic-pvc.yaml -n log
-
-
+We have enabled Stackdriver during kubernetes cluster creation, this aggregates of metrics, logs, and events from k8s, infrastructure, pods, services and other asserts of k8s. 
 
 # Overall Landscape 
 
@@ -80,7 +53,7 @@ Google Kubernete Engine | Managed Kubernete for container Orchestration
 Ambassador | API gateway 
 Ambassador | Load Balancer
 Istio | Connect, Secure, Control and Observe  microservices
-Prometheus | Monitoring
-Fluentd | Logging
+Stackdriver | Monitoring & Logging
+
 
 ![alt landscape](https://i.ibb.co/X82S1rz/Screen-Shot-2019-09-18-at-8-57-18-AM.png)
