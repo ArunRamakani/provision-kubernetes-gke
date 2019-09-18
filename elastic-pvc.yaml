@@ -1,18 +1,8 @@
----
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: elastic-pv
-provisioner: kubernetes.io/gce-pd
-parameters:
-  type: pd-ssd
-     
----
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: elastic-data
-  namespace: elastic
+  namespace: logging
 spec:
   accessModes:
   - ReadWriteOnce
