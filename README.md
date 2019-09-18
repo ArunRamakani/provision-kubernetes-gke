@@ -56,4 +56,4 @@ Istio | Connect, Secure, Control and Observe  microservices
 Stackdriver | Monitoring & Logging
 
 
-![alt landscape](https://i.ibb.co/X82S1rz/Screen-Shot-2019-09-18-at-8-57-18-AM.png)
+![alt landscape](https://i.ibb.co/7z5dnCZ/Screen-Shot-2019-09-18-at-1-36-33-PM.png)
