@@ -60,14 +60,18 @@ kubectl port-forward prometheus-monitoring-3331088907-hm5n1 8080:9090 -n monitor
 
 # Overall Landscape 
 
-Google Kubernete Engine - Managed Kubernete for container Orchestration 
+Tech Stack  | Usage
+------------ | -------------
+Google Kubernete Engine | Managed Kubernete for container Orchestration 
 
-Ambassador - API gateway 
+Ambassador | API gateway 
 
-Ambassador - Load Balancer
+Ambassador | Load Balancer
 
-Istio - Connect, Secure, Control and Observe  microservices
+Istio | Connect, Secure, Control and Observe  microservices
 
-Prometheus - Monitoring 
+Prometheus | Monitoring
 
-![alt landscape](https://i.ibb.co/SdQcLBT/Screen-Shot-2019-09-17-at-5-38-57-PM.png)
+Fluentd | Logging
+
+![alt landscape](https://i.ibb.co/X82S1rz/Screen-Shot-2019-09-18-at-8-57-18-AM.png)
